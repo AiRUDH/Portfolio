@@ -4,7 +4,7 @@
    better responsiveness, micro-animations
    ───────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;700;900&display=swap');
+/* Fonts loaded via <link> in HTML <head> — avoids @import render-blocking chain */
 
 /* ═══ TOKENS ═══ */
 :root {
@@ -1634,6 +1634,7 @@ ol {
   resize: none;
   transition: border-color .25s;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .form-group input:focus,

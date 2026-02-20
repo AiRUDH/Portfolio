@@ -36,17 +36,55 @@
   <meta name="twitter:description"
     content="HPE CodeWar Winner. Smart India Hackathon Qualifier. AI Builder. Available worldwide.">
 
-  <!-- PRELOADS -->
+  <!-- FONTS (loaded as stylesheet, not @import, to avoid render-blocking chain) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
-    as="style">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-  <!-- FAVICON (inline SVG) -->
+  <!-- FAVICON -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚡</text></svg>">
+
+  <!-- GOOGLEBOT FAST-PATH: skip loader + show all content instantly for crawlers -->
+  <script>
+    if (/bot|crawl|spider|slurp|googlebot|bingbot|yandex|baidu|duckduck/i.test(navigator.userAgent)) {
+      var s = document.createElement('style');
+      s.textContent = '#loader{display:none!important}.reveal{opacity:1!important;transform:none!important}.hero-headline .word{opacity:1!important;transform:none!important}.h-badge{opacity:1!important;transform:none!important;animation:none!important}';
+      document.head.appendChild(s);
+    }
+  </script>
+
+  <!-- NOSCRIPT FALLBACK: ensure crawlers without JS still see content -->
+  <noscript>
+    <style>
+      #loader {
+        display: none !important
+      }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important
+      }
+
+      .hero-headline .word {
+        opacity: 1 !important;
+        transform: none !important
+      }
+
+      .h-badge {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important
+      }
+
+      #typewriter::after {
+        content: 'Merging strategy with technology.'
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
@@ -372,7 +410,18 @@
       }
     ]
   }</script>
-  <script src="main.js"></script>
+  <!-- FAQ Schema for rich snippets -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Who is Anirudh Jindal?","acceptedAnswer":{"@type":"Answer","text":"Anirudh Jindal (AiRUDH™) is a Project Manager, AI Strategist, and Business Leader from Baraut, India. He won HPE CodeWar 2024 and qualified for Smart India Hackathon 2024."}},
+      {"@type":"Question","name":"What does AiRUDH do?","acceptedAnswer":{"@type":"Answer","text":"AiRUDH™ provides project management consulting, AI automation, business strategy advisory, and product development services worldwide."}},
+      {"@type":"Question","name":"How to contact Anirudh Jindal?","acceptedAnswer":{"@type":"Answer","text":"You can reach Anirudh Jindal via WhatsApp at +91 98974 70837, email at work.anirudhjindal@gmail.com, or through LinkedIn."}},
+      {"@type":"Question","name":"What is Anirudh Jindal's experience?","acceptedAnswer":{"@type":"Answer","text":"Anirudh has 3+ years of experience in IT operations, CRM, project management, and AI/ML. He has delivered 15+ projects including HPE enterprise solutions, the AlTron offline AI system, and e-commerce platforms."}}
+    ]
+  }</script>
+  <script src="main.js" defer></script>
 </body>
 
 </html>
