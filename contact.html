@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact — Hire Anirudh Jindal | AiRUDH™</title>
+    <meta name="description"
+        content="Hire Anirudh Jindal for project management, business strategy and AI automation. Fast reply. Available worldwide.">
+    <link rel="canonical" href="https://airudh.in/contact.html">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            min-height: 58svh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: calc(var(--nav-h)+3rem) 4rem 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media(max-width:768px) {
+            .page-hero {
+                padding: calc(var(--nav-h)+2rem) 1.5rem 3rem;
+            }
+        }
+
+        .page-hero canvas {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .avail-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .65rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+
+        .avail-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: blink 2s ease infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .15
+            }
+        }
+
+        .ph-title {
+            font-weight: 900;
+            font-size: clamp(3rem, 9vw, 5.5rem);
+            letter-spacing: -2px;
+            line-height: .92;
+        }
+
+        .ph-ghost {
+            -webkit-text-stroke: 1.5px rgba(255, 255, 255, .12);
+            -webkit-text-fill-color: transparent;
+        }
+
+        .ph-sub {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-top: 1rem;
+            max-width: 480px;
+        }
+
+        /* EMAIL CTA */
+        .big-email {
+            display: inline-block;
+            font-weight: 900;
+            font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+            letter-spacing: -.03em;
+            margin-bottom: 2.5rem;
+            line-height: 1.15;
+            position: relative;
+            transition: color .2s;
+        }
+
+        .big-email::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--text);
+            transform: scaleX(.2);
+            transform-origin: left;
+            transition: transform .35s var(--ease), background .2s;
+        }
+
+        .big-email:hover {
+            color: var(--accent);
+        }
+
+        .big-email:hover::after {
+            transform: scaleX(1);
+            background: var(--accent);
+        }
+
+        /* OPEN TO */
+        .open-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .6rem;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: .75rem;
+            margin-top: 2.5rem;
+        }
+
+        .open-list {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+        }
+
+        .open-item {
+            font-size: .85rem;
+            color: var(--muted);
+            padding: .5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+            transition: color .2s, padding-left .2s;
+        }
+
+        .open-item:hover {
+            color: var(--text);
+            padding-left: .5rem;
+        }
+
+        .open-item::before {
+            content: '→ ';
+            color: var(--accent);
+            font-size: .75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <div id="page-overlay"></div>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <nav id="nav">
+        <a href="index.html" class="nav-logo mag">Ai<span>RUDH</span></a>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link" data-page="index.html">Home</a>
+            <a href="about.html" class="nav-link" data-page="about.html">About</a>
+            <a href="work.html" class="nav-link" data-page="work.html">Work</a>
+            <a href="contact.html" class="nav-cta mag">Hire Me ↗</a>
+        </div>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- HERO -->
+    <div class="page-hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="page-hero-content">
+            <div class="avail-badge reveal"><span class="avail-dot"></span>Currently Available</div>
+            <h1 class="ph-title reveal rd1">Let's<br><span class="ph-ghost">Talk</span></h1>
+            <p class="ph-sub reveal rd2">I reply within 24 hours. Every great engagement starts with a message.</p>
+        </div>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee-inner">
+            <span class="mq-item">PM Consulting</span><span class="mq-item">AI Projects</span>
+            <span class="mq-item">Strategy Advisory</span><span class="mq-item">Product Build</span>
+            <span class="mq-item">Team Leadership</span><span class="mq-item">Fractional PM</span>
+            <span class="mq-item">Mentoring</span><span class="mq-item">24h Reply</span>
+            <span class="mq-item">PM Consulting</span><span class="mq-item">AI Projects</span>
+            <span class="mq-item">Strategy Advisory</span><span class="mq-item">Product Build</span>
+            <span class="mq-item">Team Leadership</span><span class="mq-item">Fractional PM</span>
+            <span class="mq-item">Mentoring</span><span class="mq-item">24h Reply</span>
+        </div>
+    </div>
+
+    <!-- CONTACT BODY -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- LEFT: INFO -->
+                <div class="contact-info">
+                    <div class="section-label reveal">[01] Reach Me</div>
+                    <a href="mailto:work.anirudhjindal@gmail.com"
+                        class="big-email reveal rd1 mag">work.anirudhjindal<br>@gmail.com</a>
+
+                    <div class="reveal rd2">
+                        <a href="tel:+919897470837" class="contact-link mag">
+                            <div>
+                                <div class="cl-label">Phone / WhatsApp</div>
+                                <div class="cl-value">+91 98974 70837</div>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                        <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" class="contact-link mag">
+                            <div>
+                                <div class="cl-label">LinkedIn</div>
+                                <div class="cl-value">linkedin.com/in/anirudh-jindal</div>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                        <a href="https://github.com/AiRUDH" target="_blank" class="contact-link mag">
+                            <div>
+                                <div class="cl-label">GitHub</div>
+                                <div class="cl-value">github.com/AiRUDH</div>
+                            </div>
+                            <span class="cl-arrow">↗</span>
+                        </a>
+                        <div class="contact-link" style="pointer-events:none;">
+                            <div>
+                                <div class="cl-label">Location</div>
+                                <div class="cl-value">Baraut, Uttar Pradesh, India</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons (PRD: hover rotate) -->
+                    <div class="social-icons reveal rd3">
+                        <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" class="social-icon"
+                            title="LinkedIn">💼</a>
+                        <a href="https://github.com/AiRUDH" target="_blank" class="social-icon" title="GitHub">🐙</a>
+                        <a href="mailto:work.anirudhjindal@gmail.com" class="social-icon" title="Email">📧</a>
+                    </div>
+
+                    <div class="open-label reveal">Open To</div>
+                    <div class="open-list reveal">
+                        <div class="open-item">Project Management Consulting</div>
+                        <div class="open-item">Business Strategy Advisory</div>
+                        <div class="open-item">AI & Automation Projects</div>
+                        <div class="open-item">Fractional PM / Team Lead</div>
+                        <div class="open-item">Startup / Product Build</div>
+                        <div class="open-item">Speaking & Mentoring</div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: FORM (PRD §5) -->
+                <form class="contact-form reveal rd2" id="contact-form">
+                    <div>
+                        <h2
+                            style="font-weight:900;font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.03em;margin-bottom:.25rem;">
+                            Send a message.</h2>
+                        <p style="font-size:.82rem;color:var(--muted);">I reply within 24 hours on business days.</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label>Name *</label><input type="text" placeholder="Your name"
+                                required></div>
+                        <div class="form-group"><label>Company</label><input type="text" placeholder="Optional"></div>
+                    </div>
+                    <div class="form-group"><label>Email *</label><input type="email" placeholder="your@email.com"
+                            required></div>
+                    <div class="form-group">
+                        <label>Engagement Type</label>
+                        <select>
+                            <option value="">What are you looking for?</option>
+                            <option>Project Management</option>
+                            <option>Business Strategy</option>
+                            <option>AI & Automation</option>
+                            <option>Fractional PM Role</option>
+                            <option>Product Build / Co-founder</option>
+                            <option>Speaking / Mentoring</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Message *</label><textarea rows="5"
+                            placeholder="Describe your project, timeline, and what you need…" required></textarea></div>
+                    <button type="submit" class="submit-btn mag">
+                        <span>Send Message</span><span>↗</span>
+                    </button>
+                    <p style="font-size:.68rem;color:var(--muted);text-align:center;margin-top:.5rem;">🔒 Your
+                        information is kept private.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <footer>
+        <span>© 2025 Anirudh Jindal · AiRUDH™ · Baraut, India</span>
+        <span>Project Manager · AI Strategist · Business Leader</span>
+    </footer>
+    <button id="fab">↑</button>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Anirudh Jindal","url":"https://airudh.in/contact.html","author":{"@type":"Person","name":"Anirudh Jindal","email":"work.anirudhjindal@gmail.com","telephone":"+91-98974-70837"}}</script>
+    <script src="main.js"></script>
+</body>
+
+</html>
