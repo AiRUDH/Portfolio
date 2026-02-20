@@ -1,38 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Anirudh Jindal — AiRUDH™ | PM & AI Strategist</title>
+
+  <!-- PRIMARY SEO -->
+  <title>Anirudh Jindal — AiRUDH™ | Project Manager, AI Strategist & Business Leader</title>
   <meta name="description"
-    content="Anirudh Jindal — Elite Project Manager, Business Strategist & AI Builder. HPE CodeWar Winner. Smart India Hackathon Qualifier.">
-  <link rel="canonical" href="https://airudh.in">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" as="style">
+    content="Anirudh Jindal (AiRUDH™) — Elite Project Manager, Business Strategist & AI Builder from India. HPE CodeWar Winner. Smart India Hackathon Qualifier. Available for consulting, strategy advisory, and AI projects worldwide.">
+  <meta name="keywords"
+    content="Anirudh Jindal, AiRUDH, Project Manager, AI Strategist, Business Strategist, HPE CodeWar, Smart India Hackathon, AlTron AI, IT Consultant, Baraut, India, PM, Agile, Scrum, ML Engineer, Digital Transformation">
+  <meta name="author" content="Anirudh Jindal">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://airudh.in/">
+
+  <!-- GEO-TARGETING -->
+  <meta name="geo.region" content="IN-UP">
+  <meta name="geo.placename" content="Baraut, Uttar Pradesh">
+  <meta name="geo.position" content="29.0982;77.2633">
+  <meta name="ICBM" content="29.0982, 77.2633">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Anirudh Jindal — AiRUDH™ | PM & AI Strategist">
+  <meta property="og:description"
+    content="Elite Project Manager & AI Strategist. HPE CodeWar Winner. Available for consulting worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airudh.in/">
+  <meta property="og:site_name" content="AiRUDH™ — Anirudh Jindal">
+  <meta property="og:locale" content="en_US">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anirudh Jindal — AiRUDH™ | PM & AI Strategist">
+  <meta name="twitter:description"
+    content="HPE CodeWar Winner. Smart India Hackathon Qualifier. AI Builder. Available worldwide.">
+
+  <!-- PRELOADS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    as="style">
   <link rel="stylesheet" href="style.css">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- FAVICON (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚡</text></svg>">
 </head>
 
 <body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-brand">Ai<span>RUDH</span></div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
   <div id="scroll-progress"></div>
   <div id="page-overlay"></div>
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
 
   <!-- NAV -->
-  <nav id="nav">
-    <a href="index.html" class="nav-logo mag">Ai<span>RUDH</span></a>
+  <nav id="nav" role="navigation" aria-label="Primary Navigation">
+    <a href="index.html" class="nav-logo mag" aria-label="AiRUDH Home">Ai<span>RUDH</span></a>
     <div class="nav-menu">
       <a href="index.html" class="nav-link" data-page="index.html">Home</a>
       <a href="about.html" class="nav-link" data-page="about.html">About</a>
       <a href="work.html" class="nav-link" data-page="work.html">Work</a>
-      <a href="contact.html" class="nav-cta mag">Hire Me ↗</a>
+      <a href="contact.html" class="nav-cta mag" aria-label="Hire Anirudh Jindal">Hire Me ↗</a>
     </div>
-    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- ═══ HERO (PRD §1) ═══ -->
-  <section class="hero">
-    <canvas id="particles-canvas"></canvas>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" role="banner">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="h-shape"></div>
+      <div class="h-shape"></div>
+      <div class="h-shape"></div>
+      <div class="h-shape"></div>
+    </div>
     <div class="hero-content">
       <h1 class="hero-headline">
         <span class="word">Anirudh</span>
@@ -44,8 +95,20 @@
         <span class="word">AI</span>
         <span class="word">Strategist.</span>
       </h1>
-      <p class="hero-sub">Merging strategy with technology to deliver measurable impact.</p>
-      <a href="contact.html" class="hero-cta mag">Start a Conversation ↗</a>
+      <p class="hero-sub">
+        <span id="typewriter" class="typewriter"
+          data-phrases="Merging strategy with technology.|Building AI-driven solutions.|Leading cross-functional teams.|Delivering measurable impact."></span>
+      </p>
+      <div class="hero-badges">
+        <span class="h-badge"><span class="b-dot"></span>HPE CodeWar Winner</span>
+        <span class="h-badge"><span class="b-dot"></span>SIH 2024 Qualifier</span>
+        <span class="h-badge"><span class="b-dot"></span>AlTron AI Architect</span>
+        <span class="h-badge"><span class="b-dot"></span>Available Worldwide</span>
+      </div>
+      <div class="hero-cta-row">
+        <a href="contact.html" class="hero-cta mag">Start a Conversation ↗</a>
+        <a href="work.html" class="hero-cta-sec mag">View Work →</a>
+      </div>
     </div>
     <div class="scroll-indicator">
       <span>Scroll</span>
@@ -54,58 +117,47 @@
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-inner">
-      <span class="mq-item">Project Management</span>
-      <span class="mq-item">AI & Automation</span>
-      <span class="mq-item">Business Strategy</span>
-      <span class="mq-item">Agile / Scrum</span>
-      <span class="mq-item">Digital Transformation</span>
-      <span class="mq-item">Team Leadership</span>
-      <span class="mq-item">HPE CodeWar 2024</span>
-      <span class="mq-item">Smart India Hackathon</span>
-      <span class="mq-item">Project Management</span>
-      <span class="mq-item">AI & Automation</span>
-      <span class="mq-item">Business Strategy</span>
-      <span class="mq-item">Agile / Scrum</span>
-      <span class="mq-item">Digital Transformation</span>
-      <span class="mq-item">Team Leadership</span>
-      <span class="mq-item">HPE CodeWar 2024</span>
-      <span class="mq-item">Smart India Hackathon</span>
+      <span class="mq-item">Project Management</span><span class="mq-item">AI & Automation</span>
+      <span class="mq-item">Business Strategy</span><span class="mq-item">Agile / Scrum</span>
+      <span class="mq-item">Digital Transformation</span><span class="mq-item">Team Leadership</span>
+      <span class="mq-item">HPE CodeWar 2024</span><span class="mq-item">Smart India Hackathon</span>
+      <span class="mq-item">Project Management</span><span class="mq-item">AI & Automation</span>
+      <span class="mq-item">Business Strategy</span><span class="mq-item">Agile / Scrum</span>
+      <span class="mq-item">Digital Transformation</span><span class="mq-item">Team Leadership</span>
+      <span class="mq-item">HPE CodeWar 2024</span><span class="mq-item">Smart India Hackathon</span>
     </div>
   </div>
 
   <!-- ═══ ABOUT STRIP ═══ -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-photo reveal">
-          <img src="Professional_PIC-Photoroom.jpg" alt="Anirudh Jindal — Project Manager">
+          <img src="Professional_PIC-Photoroom.jpg" alt="Anirudh Jindal — Project Manager & AI Strategist from India"
+            width="400" height="400" loading="lazy">
         </div>
         <div class="about-body">
           <div class="section-label reveal">[01] About</div>
           <h2 class="reveal rd1">Building bridges between <strong style="color:var(--accent)">strategy</strong> and
             execution.</h2>
           <p class="reveal rd2">
-            I'm <strong>Anirudh Jindal</strong> — a Project Manager, Business Strategist, and AI Builder from Baraut,
-            India.
-            I work at the intersection of technology and business leadership, turning complex problems into measurable
+            I'm <strong>Anirudh Jindal</strong>, known globally as <strong>AiRUDH™</strong> — a Project Manager,
+            Business Strategist, and AI Builder from Baraut, India.
+            I work at the intersection of technology and business leadership, turning complex challenges into measurable
             outcomes.
           </p>
           <p class="reveal rd3">
             From IT operations and CRM to strategic leadership and AI-driven automation —
-            I recognised that the biggest leverage isn't technical. It's <strong>systems thinking and people
+            I discovered that the biggest leverage isn't technical. It's <strong>systems thinking and people
               alignment</strong>.
           </p>
           <div class="skills-tags reveal rd4">
-            <span class="skill-tag">Agile / Scrum</span>
-            <span class="skill-tag">Python / ML</span>
-            <span class="skill-tag">Jira</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">SQL / NoSQL</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Google Analytics</span>
-            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Agile / Scrum</span><span class="skill-tag">Python / ML</span>
+            <span class="skill-tag">Jira & Confluence</span><span class="skill-tag">Docker</span>
+            <span class="skill-tag">SQL / NoSQL</span><span class="skill-tag">Figma</span>
+            <span class="skill-tag">Google Analytics</span><span class="skill-tag">REST APIs</span>
           </div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;" class="reveal rd4">
             <a href="about.html" class="btn-outline mag">Full Profile →</a>
@@ -118,36 +170,49 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ PROJECTS PREVIEW (PRD §4) ═══ -->
-  <section class="section">
+  <!-- ═══ BRAND MANIFESTO ═══ -->
+  <section class="manifesto">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content:center;">[02] Brand</div>
+      <div class="manifesto-brand reveal rd1">AiRUDH</div>
+      <p class="manifesto-sub reveal rd2">
+        AiRUDH™ is more than a name — it's a commitment to merging human intelligence with artificial intelligence.
+        Strategy meets code. Leadership meets data. Ideas meet execution.
+      </p>
+      <div class="manifesto-tagline reveal rd3">Where Business Meets Intelligence</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section" id="work">
     <div class="container">
       <div
         style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem;flex-wrap:wrap;gap:1rem;">
-        <div class="section-label reveal" style="margin-bottom:0;">[02] Selected Work</div>
+        <div class="section-label reveal" style="margin-bottom:0;">[03] Selected Work</div>
         <a href="work.html" class="btn-outline reveal mag" style="font-size:.75rem;">All Projects →</a>
       </div>
-
       <div class="projects-grid">
-        <!-- HPE -->
-        <a href="work.html" class="project-card reveal" data-cat="ai">
+        <a href="work.html" class="project-card reveal" data-cat="ai"
+          aria-label="HPE CodeWar 2024 — Predictive Analytics">
           <div
             style="width:100%;height:100%;background:linear-gradient(145deg,#0d1020,#0a1a30,#061820);display:flex;align-items:center;justify-content:center;">
-            <span style="font-weight:900;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em;opacity:.15;">HPE</span>
+            <span style="font-weight:900;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em;opacity:.12;">HPE</span>
           </div>
           <div class="card-overlay">
             <h3>HPE CodeWar 2024</h3>
-            <p>Predictive analytics solution — 85% ML accuracy, 48h sprint</p>
+            <p>Predictive analytics — 85% ML accuracy, 48h sprint</p>
             <div class="card-tags"><span class="card-tag">AI / ML</span><span class="card-tag">Enterprise</span></div>
           </div>
           <div class="card-arrow">↗</div>
         </a>
-
-        <!-- AlTron -->
-        <a href="work.html" class="project-card reveal rd1" data-cat="ai">
+        <a href="work.html" class="project-card reveal rd1" data-cat="ai"
+          aria-label="AlTron AI System — Offline AI Platform">
           <div
             style="width:100%;height:100%;background:linear-gradient(145deg,#060d06,#0a1a0d,#051a10);display:flex;align-items:center;justify-content:center;">
             <span
-              style="font-weight:900;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.04em;opacity:.15;">AlTron</span>
+              style="font-weight:900;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.04em;opacity:.12;">AlTron</span>
           </div>
           <div class="card-overlay">
             <h3>AlTron AI System</h3>
@@ -156,13 +221,11 @@
           </div>
           <div class="card-arrow">↗</div>
         </a>
-
-        <!-- MySock -->
-        <a href="work.html" class="project-card reveal rd2" data-cat="web">
+        <a href="work.html" class="project-card reveal rd2" data-cat="web" aria-label="MySock Platform — E-Commerce">
           <div
             style="width:100%;height:100%;background:linear-gradient(145deg,#120808,#1a0d06,#200a06);display:flex;align-items:center;justify-content:center;">
             <span
-              style="font-weight:900;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.04em;opacity:.15;">MySock</span>
+              style="font-weight:900;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.04em;opacity:.12;">MySock</span>
           </div>
           <div class="card-overlay">
             <h3>MySock Platform</h3>
@@ -176,27 +239,57 @@
   </section>
 
   <!-- MARQUEE 2 (reverse) -->
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-inner" style="animation-direction:reverse;animation-duration:30s;">
-      <span class="mq-item">85% ML Accuracy</span>
-      <span class="mq-item">40% Dev Time Saved</span>
-      <span class="mq-item">3+ Years Experience</span>
-      <span class="mq-item">15+ Projects Delivered</span>
-      <span class="mq-item">National Qualifier</span>
-      <span class="mq-item">HPE Winner</span>
-      <span class="mq-item">85% ML Accuracy</span>
-      <span class="mq-item">40% Dev Time Saved</span>
-      <span class="mq-item">3+ Years Experience</span>
-      <span class="mq-item">15+ Projects Delivered</span>
-      <span class="mq-item">National Qualifier</span>
-      <span class="mq-item">HPE Winner</span>
+      <span class="mq-item">85% ML Accuracy</span><span class="mq-item">40% Dev Time Saved</span>
+      <span class="mq-item">3+ Years Experience</span><span class="mq-item">15+ Projects</span>
+      <span class="mq-item">National Qualifier</span><span class="mq-item">HPE Winner</span>
+      <span class="mq-item">AiRUDH™</span><span class="mq-item">Open to Opportunities</span>
+      <span class="mq-item">85% ML Accuracy</span><span class="mq-item">40% Dev Time Saved</span>
+      <span class="mq-item">3+ Years Experience</span><span class="mq-item">15+ Projects</span>
+      <span class="mq-item">National Qualifier</span><span class="mq-item">HPE Winner</span>
+      <span class="mq-item">AiRUDH™</span><span class="mq-item">Open to Opportunities</span>
     </div>
   </div>
 
-  <!-- ═══ STATS ═══ -->
-  <section class="section">
+  <!-- ═══ PROCESS ═══ -->
+  <section class="section" id="process">
     <div class="container">
-      <div class="section-label reveal">[03] Impact</div>
+      <div class="section-label reveal">[04] How I Work</div>
+      <div class="process-grid reveal rd1">
+        <div class="proc-card">
+          <div class="proc-num">01</div>
+          <div class="proc-title">Discovery</div>
+          <div class="proc-desc">Deep-dive into stakeholders, data, and constraints to define the real problem — not the
+            perceived one.</div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">02</div>
+          <div class="proc-title">Strategy</div>
+          <div class="proc-desc">OKRs, roadmaps, and resource plans. Every decision anchored to measurable outcomes.
+          </div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">03</div>
+          <div class="proc-title">Execution</div>
+          <div class="proc-desc">Agile sprints, daily standups, and transparent tracking. Ship early, ship often.</div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">04</div>
+          <div class="proc-title">Iterate</div>
+          <div class="proc-desc">Retrospectives, data review, and continuous refinement. Good enough is never good
+            enough.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="section" id="stats">
+    <div class="container">
+      <div class="section-label reveal">[05] Impact</div>
       <div class="stats-bar reveal rd1">
         <div class="stat-cell">
           <div class="stat-num"><span data-to="3" data-suffix="+">0</span></div>
@@ -221,9 +314,7 @@
   <!-- ═══ CTA ═══ -->
   <section class="section cta-section">
     <div class="container">
-      <h2 class="cta-headline reveal">
-        Let's build<br><span class="cta-ghost">something great.</span>
-      </h2>
+      <h2 class="cta-headline reveal">Let's build<br><span class="cta-ghost">something great.</span></h2>
       <div class="cta-buttons reveal rd2">
         <a href="contact.html" class="btn-accent mag">Start a Conversation ↗</a>
         <a href="work.html" class="btn-outline mag">View All Work →</a>
@@ -233,17 +324,54 @@
 
   <div class="divider"></div>
   <footer>
-    <span>© 2025 Anirudh Jindal · AiRUDH™ · Baraut, India</span>
+    <div>
+      <span class="footer-brand">AiRUDH</span>
+      <span style="margin-left:.5rem;">© 2025 Anirudh Jindal · Baraut, India</span>
+    </div>
     <span>
       <a href="mailto:work.anirudhjindal@gmail.com">Email</a> ·
-      <a href="https://linkedin.com/in/anirudh-jindal" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/AiRUDH" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/AiRUDH" target="_blank" rel="noopener">GitHub</a>
     </span>
   </footer>
   <button id="fab" aria-label="Back to top">↑</button>
 
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anirudh Jindal","alternateName":"AiRUDH","url":"https://airudh.in","email":"work.anirudhjindal@gmail.com","telephone":"+91-98974-70837","jobTitle":"Project Manager & Business Strategist","address":{"@type":"PostalAddress","addressLocality":"Baraut","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"sameAs":["https://linkedin.com/in/anirudh-jindal","https://github.com/AiRUDH"]}</script>
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "name":"AiRUDH™ — Anirudh Jindal",
+        "url":"https://airudh.in",
+        "description":"Portfolio of Anirudh Jindal (AiRUDH™) — Project Manager, AI Strategist & Business Leader",
+        "potentialAction":{"@type":"SearchAction","target":"https://airudh.in/?q={search_term_string}","query-input":"required name=search_term_string"}
+      },
+      {
+        "@type":"Person",
+        "name":"Anirudh Jindal",
+        "alternateName":["AiRUDH","Ai RUDH","Anirudh"],
+        "url":"https://airudh.in",
+        "email":"work.anirudhjindal@gmail.com",
+        "telephone":"+91-98974-70837",
+        "jobTitle":"Project Manager & AI Strategist",
+        "description":"Elite Project Manager, Business Strategist, and AI Builder. HPE CodeWar 2024 Winner. Smart India Hackathon 2024 Qualifier. Creator of AlTron AI. Available for worldwide consulting.",
+        "knowsAbout":["Project Management","Artificial Intelligence","Machine Learning","Business Strategy","Agile","Scrum","Digital Transformation","Python","Data Analytics"],
+        "address":{"@type":"PostalAddress","addressLocality":"Baraut","addressRegion":"Uttar Pradesh","addressCountry":"IN"},
+        "sameAs":["https://linkedin.com/in/anirudh-jindal","https://github.com/AiRUDH"],
+        "award":["HPE CodeWar 2024 Winner","Smart India Hackathon 2024 Qualifier"]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://airudh.in/"},
+          {"@type":"ListItem","position":2,"name":"About","item":"https://airudh.in/about.html"},
+          {"@type":"ListItem","position":3,"name":"Work","item":"https://airudh.in/work.html"},
+          {"@type":"ListItem","position":4,"name":"Contact","item":"https://airudh.in/contact.html"}
+        ]
+      }
+    ]
+  }</script>
   <script src="main.js"></script>
 </body>
 

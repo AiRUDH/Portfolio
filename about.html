@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>About — Anirudh Jindal | AiRUDH™</title>
+    <title>About Anirudh Jindal — AiRUDH™ | PM, AI Strategist & Business Leader</title>
     <meta name="description"
-        content="The story, values, and skills of Anirudh Jindal — PM, AI Strategist, business leader from Baraut, India.">
+        content="The story, values, and capabilities of Anirudh Jindal (AiRUDH™). Project Manager from Baraut, India. HPE CodeWar Winner. Smart India Hackathon Qualifier. Available for worldwide consulting.">
+    <meta name="keywords"
+        content="Anirudh Jindal bio, AiRUDH about, Project Manager India, AI Strategist background, HPE CodeWar winner, Smart India Hackathon, Baraut, business leader, PM skills">
+    <meta name="author" content="Anirudh Jindal">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://airudh.in/about.html">
+    <meta property="og:title" content="About Anirudh Jindal — AiRUDH™">
+    <meta property="og:description" content="PM & AI Strategist. HPE CodeWar Winner. Available worldwide.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://airudh.in/about.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Anirudh Jindal — AiRUDH™">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚡</text></svg>">
     <style>
         .page-hero {
             min-height: 55svh;
@@ -23,6 +36,7 @@
         @media(max-width:768px) {
             .page-hero {
                 padding: calc(var(--nav-h)+2rem) 1.5rem 3rem;
+                min-height: 45svh;
             }
         }
 
@@ -31,6 +45,14 @@
             inset: 0;
             z-index: 0;
             pointer-events: none;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background: radial-gradient(ellipse 80% 50% at 20% 80%, rgba(0, 255, 136, .05) 0%, transparent 60%);
         }
 
         .page-hero-content {
@@ -48,6 +70,7 @@
         }
 
         .ph-title {
+            font-family: 'Outfit', sans-serif;
             font-weight: 900;
             font-size: clamp(3rem, 9vw, 5.5rem);
             letter-spacing: -2px;
@@ -59,7 +82,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* BIO SPLIT */
         .bio-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -77,6 +99,12 @@
         .bio-photo {
             position: sticky;
             top: calc(var(--nav-h)+2rem);
+        }
+
+        @media(max-width:768px) {
+            .bio-photo {
+                position: static;
+            }
         }
 
         .bio-photo-wrap {
@@ -116,7 +144,7 @@
 
         .bio-text h2 {
             font-weight: 700;
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-size: clamp(1.6rem, 3.5vw, 2.3rem);
             letter-spacing: -.02em;
             margin-bottom: 1.5rem;
             line-height: 1.2;
@@ -126,7 +154,7 @@
             color: rgba(255, 255, 255, .7);
             line-height: 1.8;
             margin-bottom: 1.25rem;
-            font-size: 1.05rem;
+            font-size: clamp(.88rem, 1.6vw, 1.05rem);
         }
 
         .bio-text p strong {
@@ -141,7 +169,7 @@
 
         .quote-block {
             font-weight: 700;
-            font-size: clamp(1rem, 2.2vw, 1.3rem);
+            font-size: clamp(.95rem, 2vw, 1.2rem);
             line-height: 1.5;
             padding: 2rem 0;
             border-top: 1px solid var(--border);
@@ -152,11 +180,6 @@
         .quote-block::before {
             content: '❝ ';
             color: var(--accent);
-        }
-
-        /* VALUES */
-        .values-list {
-            margin-top: 1.5rem;
         }
 
         .val-row {
@@ -180,7 +203,7 @@
 
         .val-title {
             font-weight: 700;
-            font-size: .95rem;
+            font-size: .92rem;
             margin-bottom: .2rem;
             transition: color .2s;
         }
@@ -190,12 +213,11 @@
         }
 
         .val-desc {
-            font-size: .82rem;
+            font-size: .8rem;
             color: var(--muted);
             line-height: 1.7;
         }
 
-        /* SKILLS */
         .sk-cols {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -229,12 +251,12 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: .4rem;
-            font-size: .82rem;
+            font-size: .8rem;
         }
 
         .sk-pct {
             font-family: 'JetBrains Mono', monospace;
-            font-size: .7rem;
+            font-size: .68rem;
             color: var(--muted);
         }
 
@@ -253,7 +275,6 @@
             transition: transform 1.2s var(--spring);
         }
 
-        /* FACTS */
         .facts-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -269,13 +290,13 @@
         }
 
         .fact-cell {
-            padding: 1.25rem 1.5rem;
+            padding: 1.15rem 1.25rem;
             border-right: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
-            gap: .75rem;
-            font-size: .82rem;
+            gap: .65rem;
+            font-size: .8rem;
             color: var(--muted);
             transition: background .2s;
         }
@@ -291,12 +312,18 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="loader-brand">Ai<span>RUDH</span></div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
     <div id="scroll-progress"></div>
     <div id="page-overlay"></div>
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
 
-    <nav id="nav">
+    <nav id="nav" role="navigation">
         <a href="index.html" class="nav-logo mag">Ai<span>RUDH</span></a>
         <div class="nav-menu">
             <a href="index.html" class="nav-link" data-page="index.html">Home</a>
@@ -304,74 +331,64 @@
             <a href="work.html" class="nav-link" data-page="work.html">Work</a>
             <a href="contact.html" class="nav-cta mag">Hire Me ↗</a>
         </div>
-        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </nav>
 
-    <!-- HERO -->
     <div class="page-hero">
-        <canvas id="particles-canvas"></canvas>
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
         <div class="page-hero-content">
             <div class="ph-label reveal">About</div>
             <h1 class="ph-title reveal rd1">The<br><span class="ph-ghost">Person</span></h1>
         </div>
     </div>
 
-    <!-- MARQUEE -->
-    <div class="marquee">
+    <div class="marquee" aria-hidden="true">
         <div class="marquee-inner">
             <span class="mq-item">Project Manager</span><span class="mq-item">AI Strategist</span>
             <span class="mq-item">Business Leader</span><span class="mq-item">Baraut, India</span>
             <span class="mq-item">HPE Winner</span><span class="mq-item">SIH Qualifier</span>
-            <span class="mq-item">AlTron Architect</span><span class="mq-item">Open to Work</span>
+            <span class="mq-item">AlTron Architect</span><span class="mq-item">AiRUDH™</span>
             <span class="mq-item">Project Manager</span><span class="mq-item">AI Strategist</span>
             <span class="mq-item">Business Leader</span><span class="mq-item">Baraut, India</span>
             <span class="mq-item">HPE Winner</span><span class="mq-item">SIH Qualifier</span>
-            <span class="mq-item">AlTron Architect</span><span class="mq-item">Open to Work</span>
+            <span class="mq-item">AlTron Architect</span><span class="mq-item">AiRUDH™</span>
         </div>
     </div>
 
-    <!-- BIO -->
     <section class="section">
         <div class="container">
             <div class="bio-split">
                 <div class="bio-photo reveal">
                     <div class="bio-photo-wrap">
-                        <img src="Professional_PIC-Photoroom.jpg" alt="Anirudh Jindal — Project Manager">
+                        <img src="Professional_PIC-Photoroom.jpg"
+                            alt="Anirudh Jindal — Project Manager & AI Strategist from Baraut, India" width="400"
+                            height="500" loading="lazy">
                     </div>
-                    <div class="bio-cap">
-                        <span>Anirudh Jindal · AiRUDH™</span>
-                        <a href="contact.html">Hire Me ↗</a>
-                    </div>
+                    <div class="bio-cap"><span>Anirudh Jindal · AiRUDH™</span><a href="contact.html">Hire Me ↗</a></div>
                 </div>
                 <div class="bio-text">
                     <div class="section-label reveal">[01] Bio</div>
                     <h2 class="reveal rd1">Building bridges between <span style="color:var(--accent)">strategy</span>
                         and execution.</h2>
-                    <p class="reveal rd2">
-                        I'm <strong>Anirudh Jindal</strong> — a Project Manager, Business Strategist, and AI Builder
-                        based in <strong>Baraut, Uttar Pradesh, India</strong>.
-                    </p>
-                    <p class="reveal rd3">
-                        I started in <em>IT operations and CRM</em>, then pivoted to strategic leadership and AI-driven
-                        automation after recognising that the biggest leverage in any organisation isn't technical —
-                        it's systems thinking and <strong>people alignment</strong>.
-                    </p>
-                    <p class="reveal rd4">
-                        Today, I work with clients and teams globally, leading cross-functional engagements across
-                        <strong>product development, process automation, and digital transformation</strong>.
-                    </p>
+                    <p class="reveal rd2">I'm <strong>Anirudh Jindal</strong>, known globally as
+                        <strong>AiRUDH™</strong> — a Project Manager, Business Strategist, and AI Builder based in
+                        <strong>Baraut, Uttar Pradesh, India</strong>.</p>
+                    <p class="reveal rd3">I started in <em>IT operations and CRM</em>, then pivoted to strategic
+                        leadership and AI-driven automation after recognising that the biggest leverage in any
+                        organisation isn't technical — it's systems thinking and <strong>people alignment</strong>.</p>
+                    <p class="reveal rd4">Today, I work with clients and teams globally, leading cross-functional
+                        engagements across <strong>product development, process automation, and digital
+                            transformation</strong>.</p>
                     <div class="quote-block reveal">I don't measure success by how busy the team is. I measure it by how
                         clearly everyone understands what we're building — and why.</div>
-
                     <div class="facts-grid reveal">
-                        <div class="fact-cell">📍 Baraut, Uttar Pradesh, India</div>
+                        <div class="fact-cell">📍 Baraut, UP, India</div>
                         <div class="fact-cell">📱 +91 98974 70837</div>
                         <div class="fact-cell"><a href="mailto:work.anirudhjindal@gmail.com">📧
                                 work.anirudhjindal@gmail.com</a></div>
-                        <div class="fact-cell"><a href="https://linkedin.com/in/anirudh-jindal" target="_blank">💼
-                                LinkedIn ↗</a></div>
+                        <div class="fact-cell"><a href="https://linkedin.com/in/anirudh-jindal" target="_blank"
+                                rel="noopener">💼 LinkedIn ↗</a></div>
                     </div>
-
                     <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;" class="reveal">
                         <a href="contact.html" class="btn-accent mag">Hire Me ↗</a>
                         <a href="work.html" class="btn-outline mag">See Work →</a>
@@ -383,11 +400,21 @@
 
     <div class="divider"></div>
 
-    <!-- VALUES -->
+    <!-- BRAND -->
+    <section class="manifesto">
+        <div class="container">
+            <div class="manifesto-brand reveal">AiRUDH</div>
+            <p class="manifesto-sub reveal rd1">Strategy meets code. Leadership meets data. Ideas meet execution.</p>
+            <div class="manifesto-tagline reveal rd2">Where Business Meets Intelligence</div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
     <section class="section">
         <div class="container">
             <div class="section-label reveal">[02] Values</div>
-            <div class="values-list">
+            <div>
                 <div class="val-row reveal"><span class="val-icon">⚡</span>
                     <div>
                         <div class="val-title">Execution First</div>
@@ -405,15 +432,14 @@
                 <div class="val-row reveal rd2"><span class="val-icon">🤝</span>
                     <div>
                         <div class="val-title">Radical Clarity</div>
-                        <div class="val-desc">Stakeholders deserve honesty. I communicate risks early and often — always
-                            with solutions attached.</div>
+                        <div class="val-desc">Stakeholders deserve honesty. I communicate risks early — always with
+                            solutions.</div>
                     </div>
                 </div>
                 <div class="val-row reveal rd3"><span class="val-icon">🔁</span>
                     <div>
                         <div class="val-title">Continuous Improvement</div>
-                        <div class="val-desc">Every sprint ends with a retrospective. Kaizen isn't optional — it's how
-                            good teams stay great.</div>
+                        <div class="val-desc">Every sprint ends with a retro. Good enough is never good enough.</div>
                     </div>
                 </div>
             </div>
@@ -422,7 +448,6 @@
 
     <div class="divider"></div>
 
-    <!-- SKILLS -->
     <section class="section">
         <div class="container">
             <div class="section-label reveal">[03] Capabilities</div>
@@ -499,11 +524,14 @@
 
     <div class="divider"></div>
     <footer>
-        <span>© 2025 Anirudh Jindal · AiRUDH™</span>
+        <div><span class="footer-brand">AiRUDH</span><span style="margin-left:.5rem;">© 2025 Anirudh Jindal</span></div>
         <span><a href="contact.html">Hire Me</a> · <a href="mailto:work.anirudhjindal@gmail.com">Email</a> · <a
-                href="https://github.com/AiRUDH" target="_blank">GitHub</a></span>
+                href="https://github.com/AiRUDH" target="_blank" rel="noopener">GitHub</a></span>
     </footer>
-    <button id="fab">↑</button>
+    <button id="fab" aria-label="Back to top">↑</button>
+
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"About Anirudh Jindal","url":"https://airudh.in/about.html","mainEntity":{"@type":"Person","name":"Anirudh Jindal","alternateName":"AiRUDH","jobTitle":"Project Manager & AI Strategist","email":"work.anirudhjindal@gmail.com","telephone":"+91-98974-70837","address":{"@type":"PostalAddress","addressLocality":"Baraut","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"knowsAbout":["Project Management","AI","Machine Learning","Business Strategy","Agile","Scrum"],"award":["HPE CodeWar 2024 Winner","Smart India Hackathon 2024 Qualifier"]}}</script>
     <script src="main.js"></script>
 </body>
 

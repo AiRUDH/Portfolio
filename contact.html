@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Contact — Hire Anirudh Jindal | AiRUDH™</title>
+    <title>Contact Anirudh Jindal — AiRUDH™ | Hire a PM & AI Strategist</title>
     <meta name="description"
-        content="Hire Anirudh Jindal for project management, business strategy and AI automation. Fast reply. Available worldwide.">
+        content="Hire Anirudh Jindal (AiRUDH™) for project management, AI automation, and business strategy. Connect via WhatsApp, email, or LinkedIn. 24h reply guaranteed.">
+    <meta name="keywords"
+        content="Hire Anirudh Jindal, Contact AiRUDH, Project Manager for Hire, AI Consultant India, Business Strategy Consultant, WhatsApp Anirudh, PM Consulting">
+    <meta name="author" content="Anirudh Jindal">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://airudh.in/contact.html">
+    <meta property="og:title" content="Contact Anirudh Jindal — Hire AiRUDH™">
+    <meta property="og:description" content="Connect via WhatsApp, email, or schedule a call. 24h reply guaranteed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://airudh.in/contact.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Anirudh Jindal — Hire AiRUDH™">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚡</text></svg>">
     <style>
         .page-hero {
-            min-height: 58svh;
+            min-height: 55svh;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -23,6 +36,7 @@
         @media(max-width:768px) {
             .page-hero {
                 padding: calc(var(--nav-h)+2rem) 1.5rem 3rem;
+                min-height: 45svh;
             }
         }
 
@@ -31,6 +45,14 @@
             inset: 0;
             z-index: 0;
             pointer-events: none;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background: radial-gradient(ellipse 80% 50% at 20% 80%, rgba(0, 255, 136, .05) 0%, transparent 60%), radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 120, 255, .03) 0%, transparent 60%);
         }
 
         .page-hero-content {
@@ -56,6 +78,7 @@
             border-radius: 50%;
             background: var(--accent);
             animation: blink 2s ease infinite;
+            box-shadow: 0 0 8px var(--accent);
         }
 
         @keyframes blink {
@@ -71,6 +94,7 @@
         }
 
         .ph-title {
+            font-family: 'Outfit', sans-serif;
             font-weight: 900;
             font-size: clamp(3rem, 9vw, 5.5rem);
             letter-spacing: -2px;
@@ -88,86 +112,22 @@
             margin-top: 1rem;
             max-width: 480px;
         }
-
-        /* EMAIL CTA */
-        .big-email {
-            display: inline-block;
-            font-weight: 900;
-            font-size: clamp(1.25rem, 3.5vw, 2.25rem);
-            letter-spacing: -.03em;
-            margin-bottom: 2.5rem;
-            line-height: 1.15;
-            position: relative;
-            transition: color .2s;
-        }
-
-        .big-email::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--text);
-            transform: scaleX(.2);
-            transform-origin: left;
-            transition: transform .35s var(--ease), background .2s;
-        }
-
-        .big-email:hover {
-            color: var(--accent);
-        }
-
-        .big-email:hover::after {
-            transform: scaleX(1);
-            background: var(--accent);
-        }
-
-        /* OPEN TO */
-        .open-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6rem;
-            letter-spacing: .14em;
-            text-transform: uppercase;
-            color: var(--muted);
-            margin-bottom: .75rem;
-            margin-top: 2.5rem;
-        }
-
-        .open-list {
-            display: flex;
-            flex-direction: column;
-            gap: .3rem;
-        }
-
-        .open-item {
-            font-size: .85rem;
-            color: var(--muted);
-            padding: .5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, .04);
-            transition: color .2s, padding-left .2s;
-        }
-
-        .open-item:hover {
-            color: var(--text);
-            padding-left: .5rem;
-        }
-
-        .open-item::before {
-            content: '→ ';
-            color: var(--accent);
-            font-size: .75rem;
-        }
     </style>
 </head>
 
 <body>
+    <div id="loader">
+        <div class="loader-brand">Ai<span>RUDH</span></div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
     <div id="scroll-progress"></div>
     <div id="page-overlay"></div>
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
 
-    <nav id="nav">
+    <nav id="nav" role="navigation">
         <a href="index.html" class="nav-logo mag">Ai<span>RUDH</span></a>
         <div class="nav-menu">
             <a href="index.html" class="nav-link" data-page="index.html">Home</a>
@@ -175,21 +135,22 @@
             <a href="work.html" class="nav-link" data-page="work.html">Work</a>
             <a href="contact.html" class="nav-cta mag">Hire Me ↗</a>
         </div>
-        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </nav>
 
     <!-- HERO -->
     <div class="page-hero">
-        <canvas id="particles-canvas"></canvas>
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
         <div class="page-hero-content">
             <div class="avail-badge reveal"><span class="avail-dot"></span>Currently Available</div>
             <h1 class="ph-title reveal rd1">Let's<br><span class="ph-ghost">Talk</span></h1>
-            <p class="ph-sub reveal rd2">I reply within 24 hours. Every great engagement starts with a message.</p>
+            <p class="ph-sub reveal rd2">I reply within 24 hours. Every great engagement starts with a single message.
+            </p>
         </div>
     </div>
 
     <!-- MARQUEE -->
-    <div class="marquee">
+    <div class="marquee" aria-hidden="true">
         <div class="marquee-inner">
             <span class="mq-item">PM Consulting</span><span class="mq-item">AI Projects</span>
             <span class="mq-item">Strategy Advisory</span><span class="mq-item">Product Build</span>
@@ -202,113 +163,190 @@
         </div>
     </div>
 
-    <!-- CONTACT BODY -->
+    <!-- ═══ CONNECT HUB (replaces basic form) ═══ -->
     <section class="section">
         <div class="container">
             <div class="contact-grid">
-                <!-- LEFT: INFO -->
-                <div class="contact-info">
-                    <div class="section-label reveal">[01] Reach Me</div>
-                    <a href="mailto:work.anirudhjindal@gmail.com"
-                        class="big-email reveal rd1 mag">work.anirudhjindal<br>@gmail.com</a>
+                <!-- LEFT: CONNECT HUB -->
+                <div>
+                    <div class="section-label reveal">[01] Connect</div>
+                    <h2 class="reveal rd1"
+                        style="font-weight:900;font-size:clamp(1.8rem,4.5vw,2.8rem);letter-spacing:-.03em;margin-bottom:.75rem;">
+                        Pick your lane.</h2>
+                    <p class="reveal rd2"
+                        style="color:var(--muted);font-size:.9rem;margin-bottom:2.5rem;max-width:440px;">
+                        No forms. No friction. Just pick the channel that works for you — I'm reachable everywhere.
+                    </p>
 
-                    <div class="reveal rd2">
-                        <a href="tel:+919897470837" class="contact-link mag">
-                            <div>
-                                <div class="cl-label">Phone / WhatsApp</div>
-                                <div class="cl-value">+91 98974 70837</div>
-                            </div>
-                            <span class="cl-arrow">↗</span>
-                        </a>
-                        <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" class="contact-link mag">
-                            <div>
-                                <div class="cl-label">LinkedIn</div>
-                                <div class="cl-value">linkedin.com/in/anirudh-jindal</div>
-                            </div>
-                            <span class="cl-arrow">↗</span>
-                        </a>
-                        <a href="https://github.com/AiRUDH" target="_blank" class="contact-link mag">
-                            <div>
-                                <div class="cl-label">GitHub</div>
-                                <div class="cl-value">github.com/AiRUDH</div>
-                            </div>
-                            <span class="cl-arrow">↗</span>
-                        </a>
+                    <!-- Connect Hub Cards -->
+                    <div class="connect-hub reveal rd2"
+                        style="text-align:left;padding:0;background:transparent;border:none;">
+                        <div class="connect-actions" style="max-width:100%;grid-template-columns:1fr 1fr;">
+                            <!-- WhatsApp (PRIMARY) -->
+                            <a href="https://wa.me/919897470837?text=Hi%20Anirudh%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                                target="_blank" rel="noopener" class="ca-btn ca-whatsapp mag">
+                                <span class="ca-icon">💬</span>
+                                <span class="ca-text"><span class="ca-label">WhatsApp</span><span
+                                        class="ca-hint">Instant · prefilled message</span></span>
+                            </a>
+                            <!-- Email -->
+                            <a href="mailto:work.anirudhjindal@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Anirudh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss..."
+                                class="ca-btn ca-email mag">
+                                <span class="ca-icon">📧</span>
+                                <span class="ca-text"><span class="ca-label">Email</span><span
+                                        class="ca-hint">Pre-drafted · one click</span></span>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" rel="noopener"
+                                class="ca-btn ca-linkedin mag">
+                                <span class="ca-icon">💼</span>
+                                <span class="ca-text"><span class="ca-label">LinkedIn</span><span
+                                        class="ca-hint">Professional · DM Open</span></span>
+                            </a>
+                            <!-- Schedule -->
+                            <a href="tel:+919897470837" class="ca-btn ca-schedule mag">
+                                <span class="ca-icon">📞</span>
+                                <span class="ca-text"><span class="ca-label">Call Now</span><span class="ca-hint">Direct
+                                        · IST timezone</span></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Links -->
+                    <div class="reveal rd3" style="margin-top:2rem;">
                         <div class="contact-link" style="pointer-events:none;">
                             <div>
                                 <div class="cl-label">Location</div>
                                 <div class="cl-value">Baraut, Uttar Pradesh, India</div>
                             </div>
                         </div>
+                        <div class="contact-link" style="pointer-events:none;">
+                            <div>
+                                <div class="cl-label">Timezone</div>
+                                <div class="cl-value">IST (UTC +5:30)</div>
+                            </div>
+                        </div>
+                        <div class="contact-link" style="pointer-events:none;">
+                            <div>
+                                <div class="cl-label">Response Time</div>
+                                <div class="cl-value" style="color:var(--accent);">
+                                    < 24 hours</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="social-icons reveal rd4">
+                            <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" rel="noopener"
+                                class="social-icon" title="LinkedIn" aria-label="LinkedIn">💼</a>
+                            <a href="https://github.com/AiRUDH" target="_blank" rel="noopener" class="social-icon"
+                                title="GitHub" aria-label="GitHub">🐙</a>
+                            <a href="mailto:work.anirudhjindal@gmail.com" class="social-icon" title="Email"
+                                aria-label="Email">📧</a>
+                            <a href="https://wa.me/919897470837" target="_blank" rel="noopener" class="social-icon"
+                                title="WhatsApp" aria-label="WhatsApp" style="border-color:rgba(37,211,102,.3);">💬</a>
+                        </div>
                     </div>
 
-                    <!-- Social Icons (PRD: hover rotate) -->
-                    <div class="social-icons reveal rd3">
-                        <a href="https://linkedin.com/in/anirudh-jindal" target="_blank" class="social-icon"
-                            title="LinkedIn">💼</a>
-                        <a href="https://github.com/AiRUDH" target="_blank" class="social-icon" title="GitHub">🐙</a>
-                        <a href="mailto:work.anirudhjindal@gmail.com" class="social-icon" title="Email">📧</a>
-                    </div>
+                    <!-- RIGHT: OPTIONAL FORM (collapsible) -->
+                    <div class="reveal rd3">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                            <h2 style="font-weight:900;font-size:clamp(1.3rem,2.5vw,1.7rem);letter-spacing:-.02em;">Or
+                                send a brief.</h2>
+                            <button class="form-toggle mag"><span>Expand form</span> <span
+                                    class="ft-arrow">▼</span></button>
+                        </div>
+                        <p style="font-size:.82rem;color:var(--muted);margin-bottom:1.5rem;">
+                            Prefer a structured message? Open the form below — it helps me prepare for our first call.
+                        </p>
 
-                    <div class="open-label reveal">Open To</div>
-                    <div class="open-list reveal">
-                        <div class="open-item">Project Management Consulting</div>
-                        <div class="open-item">Business Strategy Advisory</div>
-                        <div class="open-item">AI & Automation Projects</div>
-                        <div class="open-item">Fractional PM / Team Lead</div>
-                        <div class="open-item">Startup / Product Build</div>
-                        <div class="open-item">Speaking & Mentoring</div>
+                        <div class="collapsible-form">
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group"><label>Name *</label><input type="text"
+                                            placeholder="Your name" required></div>
+                                    <div class="form-group"><label>Company</label><input type="text"
+                                            placeholder="Optional"></div>
+                                </div>
+                                <div class="form-group"><label>Email *</label><input type="email"
+                                        placeholder="your@email.com" required></div>
+                                <div class="form-group">
+                                    <label>Engagement Type</label>
+                                    <select>
+                                        <option value="">What are you looking for?</option>
+                                        <option>Project Management</option>
+                                        <option>Business Strategy</option>
+                                        <option>AI & Automation</option>
+                                        <option>Fractional PM Role</option>
+                                        <option>Product Build / Co-founder</option>
+                                        <option>Speaking / Mentoring</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group"><label>Message *</label><textarea rows="5"
+                                        placeholder="Describe your project, timeline, and budget range…"
+                                        required></textarea></div>
+                                <button type="submit" class="submit-btn mag"><span>Send
+                                        Brief</span><span>↗</span></button>
+                                <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.5rem;">🔒
+                                    Private. No spam. 24h reply.</p>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+    </section>
 
-                <!-- RIGHT: FORM (PRD §5) -->
-                <form class="contact-form reveal rd2" id="contact-form">
-                    <div>
-                        <h2
-                            style="font-weight:900;font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.03em;margin-bottom:.25rem;">
-                            Send a message.</h2>
-                        <p style="font-size:.82rem;color:var(--muted);">I reply within 24 hours on business days.</p>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label>Name *</label><input type="text" placeholder="Your name"
-                                required></div>
-                        <div class="form-group"><label>Company</label><input type="text" placeholder="Optional"></div>
-                    </div>
-                    <div class="form-group"><label>Email *</label><input type="email" placeholder="your@email.com"
-                            required></div>
-                    <div class="form-group">
-                        <label>Engagement Type</label>
-                        <select>
-                            <option value="">What are you looking for?</option>
-                            <option>Project Management</option>
-                            <option>Business Strategy</option>
-                            <option>AI & Automation</option>
-                            <option>Fractional PM Role</option>
-                            <option>Product Build / Co-founder</option>
-                            <option>Speaking / Mentoring</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group"><label>Message *</label><textarea rows="5"
-                            placeholder="Describe your project, timeline, and what you need…" required></textarea></div>
-                    <button type="submit" class="submit-btn mag">
-                        <span>Send Message</span><span>↗</span>
-                    </button>
-                    <p style="font-size:.68rem;color:var(--muted);text-align:center;margin-top:.5rem;">🔒 Your
-                        information is kept private.</p>
-                </form>
+    <!-- ═══ OPEN TO ═══ -->
+    <section class="section" style="padding-top:0;">
+        <div class="container" style="max-width:700px;">
+            <div class="section-label reveal">[02] Open To</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);"
+                class="reveal rd1">
+                <div class="proc-card">
+                    <div class="proc-num">→</div>
+                    <div class="proc-title">PM Consulting</div>
+                    <div class="proc-desc">Full sprint planning, delivery, and stakeholder management.</div>
+                </div>
+                <div class="proc-card">
+                    <div class="proc-num">→</div>
+                    <div class="proc-title">AI Projects</div>
+                    <div class="proc-desc">ML pipelines, automation architectures, AI strategy advisory.</div>
+                </div>
+                <div class="proc-card">
+                    <div class="proc-num">→</div>
+                    <div class="proc-title">Product Build</div>
+                    <div class="proc-desc">Zero-to-one product development, MVP strategy, and GTM.</div>
+                </div>
+                <div class="proc-card">
+                    <div class="proc-num">→</div>
+                    <div class="proc-title">Speaking / Mentoring</div>
+                    <div class="proc-desc">Guest talks, workshops, and 1-on-1 career mentoring sessions.</div>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="divider"></div>
     <footer>
-        <span>© 2025 Anirudh Jindal · AiRUDH™ · Baraut, India</span>
-        <span>Project Manager · AI Strategist · Business Leader</span>
+        <div><span class="footer-brand">AiRUDH</span><span style="margin-left:.5rem;">© 2025 Anirudh Jindal · Baraut,
+                India</span></div>
+        <span>PM Consultant · AI Strategist · Business Leader</span>
     </footer>
-    <button id="fab">↑</button>
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Anirudh Jindal","url":"https://airudh.in/contact.html","author":{"@type":"Person","name":"Anirudh Jindal","email":"work.anirudhjindal@gmail.com","telephone":"+91-98974-70837"}}</script>
+    <button id="fab" aria-label="Back to top">↑</button>
+
+    <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Contact Anirudh Jindal — Hire AiRUDH™",
+    "url":"https://airudh.in/contact.html",
+    "description":"Hire Anirudh Jindal for PM consulting, AI projects, business strategy. 24h reply guaranteed.",
+    "author":{
+      "@type":"Person","name":"Anirudh Jindal","alternateName":"AiRUDH",
+      "email":"work.anirudhjindal@gmail.com","telephone":"+91-98974-70837",
+      "sameAs":["https://linkedin.com/in/anirudh-jindal","https://github.com/AiRUDH"]
+    }
+  }</script>
     <script src="main.js"></script>
 </body>
 
