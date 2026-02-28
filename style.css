@@ -220,11 +220,17 @@ ol {
   letter-spacing: -.04em;
   color: var(--text);
   position: relative;
+  text-shadow: 0 0 20px rgba(0, 255, 136, .15);
 }
 
 .loader-brand span {
   color: var(--accent);
-  text-shadow: 0 0 30px rgba(0, 255, 136, .6);
+  text-shadow:
+    0 0 10px rgba(0, 255, 136, .8),
+    0 0 30px rgba(0, 255, 136, .5),
+    0 0 60px rgba(0, 255, 136, .25),
+    0 0 100px rgba(0, 255, 136, .1);
+  animation: brandGlow 2.5s ease-in-out infinite alternate;
 }
 
 .loader-bar {
@@ -272,16 +278,24 @@ ol {
   letter-spacing: -.03em;
   color: var(--text);
   position: relative;
+  text-shadow: 0 0 15px rgba(0, 255, 136, .08);
 }
 
 .nav-logo span {
   color: var(--accent);
-  text-shadow: 0 0 12px rgba(0, 255, 136, .4);
+  text-shadow:
+    0 0 8px rgba(0, 255, 136, .6),
+    0 0 20px rgba(0, 255, 136, .3),
+    0 0 40px rgba(0, 255, 136, .12);
   transition: text-shadow .3s;
 }
 
 .nav-logo:hover span {
-  text-shadow: 0 0 25px rgba(0, 255, 136, .8), 0 0 50px rgba(0, 255, 136, .3);
+  text-shadow:
+    0 0 10px rgba(0, 255, 136, 1),
+    0 0 30px rgba(0, 255, 136, .7),
+    0 0 60px rgba(0, 255, 136, .35),
+    0 0 100px rgba(0, 255, 136, .15);
 }
 
 .nav-logo::after {
@@ -882,11 +896,30 @@ ol {
   width: clamp(260px, 100%, 400px);
   aspect-ratio: 1;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: visible;
   margin: 0 auto;
-  transition: transform .6s var(--spring);
-  border: 2px solid var(--border);
+  transition: transform .6s var(--spring), box-shadow .6s var(--spring);
+  border: 2px solid rgba(0, 255, 136, .2);
   position: relative;
+  box-shadow:
+    0 0 25px rgba(0, 255, 136, .15),
+    0 0 60px rgba(0, 255, 136, .08),
+    0 0 100px rgba(0, 200, 255, .05);
+}
+
+/* Professional background glow behind photo */
+.about-photo::before {
+  content: '';
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(0, 255, 136, .12) 0%, rgba(0, 255, 136, .04) 40%, transparent 70%),
+    radial-gradient(circle at 30% 30%, rgba(0, 200, 255, .06) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(100, 0, 255, .04) 0%, transparent 50%);
+  z-index: -1;
+  animation: photoGlow 4s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 .about-photo::after {
@@ -896,6 +929,19 @@ ol {
   border-radius: 50%;
   border: 1px solid var(--accent-dim);
   animation: ringPulse 3s ease-in-out infinite;
+}
+
+@keyframes photoGlow {
+  0% {
+    opacity: .7;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: blur(2px);
+  }
 }
 
 @keyframes ringPulse {
@@ -914,6 +960,10 @@ ol {
 
 .about-photo:hover {
   transform: translateY(-10px);
+  box-shadow:
+    0 0 35px rgba(0, 255, 136, .25),
+    0 0 80px rgba(0, 255, 136, .12),
+    0 0 140px rgba(0, 200, 255, .08);
 }
 
 .about-photo img {
@@ -921,6 +971,7 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 50%;
 }
 
 .about-body h2 {
@@ -983,20 +1034,48 @@ ol {
   letter-spacing: -.06em;
   line-height: .85;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, var(--text) 30%, var(--accent) 100%);
+  background: linear-gradient(135deg, var(--text) 20%, var(--accent) 60%, #00ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: brandShimmer 4s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+  animation: brandShimmer 4s ease-in-out infinite alternate, brandGradientShift 6s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 136, .3)) drop-shadow(0 0 60px rgba(0, 255, 136, .12));
+  position: relative;
 }
 
 @keyframes brandShimmer {
   0% {
-    filter: brightness(1)
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, .2)) drop-shadow(0 0 50px rgba(0, 255, 136, .08)) brightness(1);
   }
 
   100% {
-    filter: brightness(1.15)
+    filter: drop-shadow(0 0 25px rgba(0, 255, 136, .4)) drop-shadow(0 0 80px rgba(0, 255, 136, .18)) brightness(1.15);
+  }
+}
+
+@keyframes brandGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes brandGlow {
+  0% {
+    text-shadow:
+      0 0 10px rgba(0, 255, 136, .6),
+      0 0 25px rgba(0, 255, 136, .3),
+      0 0 50px rgba(0, 255, 136, .15);
+  }
+  100% {
+    text-shadow:
+      0 0 15px rgba(0, 255, 136, .9),
+      0 0 40px rgba(0, 255, 136, .5),
+      0 0 80px rgba(0, 255, 136, .25),
+      0 0 120px rgba(0, 255, 136, .1);
   }
 }
 
@@ -1777,6 +1856,7 @@ footer a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 136, .2)) drop-shadow(0 0 20px rgba(0, 255, 136, .08));
 }
 
 /* ═══ FAB ═══ */
